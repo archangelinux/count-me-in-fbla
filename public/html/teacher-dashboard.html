@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>MGCI Student Involvement</title>
+  <link href="../css/dashboard.css" rel="stylesheet" type="text/css" />
+  <script src="https://kit.fontawesome.com/bd80ac2f79.js" crossorigin="anonymous"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <nav id="nav">
+    <br>
+    <img id="logo" src="../images/count-me-in-logo.png">
+    <div class="button-container">
+      <button class="navb" id="home-nav">Homepage</button>
+      <button class="navb" id="help-nav"><i class="fa-solid fa-circle-info"></i></button>
+    </div>
+    <button class="menu" id="menu"><i class="fa-solid fa-bars" style="font-size: 30px"></i></button>
+  </nav>
+
+  <h1 id="greeting">Glad you're here, </h1>
+  <p id = "description"><em>Welcome back! Here's where you can view all the upcoming and past events at Marc Garneau CI. For each event, click on "GO" to take attendance for your homeroom.</em></p>
+
+  <div id = "data">
+  <div id="attendanceDock" action="/updatePoints" method="POST">
+    <table id="attendance">
+      <thead>
+        <th>First Name</th>
+        <th>Last Name</th>
+        <th>Student Number</th>
+        <th>Attended?</th>
+      </thead>
+      <tbody id="attendanceBody">
+      </tbody>
+    </table>
+    <button id="submitAttendance">Submit</button>
+  </div>
+
+  <table id="eventsTable">
+    <thead>
+      <th style = "width: 30px;">#</th> 
+      <th style = "width: 180px;">Event Name</th>   
+      <th>Category</th>   
+      <th style = "width: 150px;">Date/Time</th>   
+      <th>Attendance</th>
+    </thead>
+
+    <tbody id="eventBody">
+
+    </tbody>
+  </table>
+</div>
+
+
+
+
+
+
+  <script src="../js/dashboard.js">
+
+  </script>
+
+</body>
+
+</html>

@@ -1,0 +1,333 @@
+body {
+  background-color: white;
+  background-size: 400% 400%;
+  height: 100vh;
+  font-family: 'Inter', sans-serif;
+  line-height: 170%;
+  overflow-x: hidden;
+}
+
+h1 {
+  position: absolute;
+  width: 920px;
+  height: 60px;
+  top: 260px;
+  left: 20%;
+
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 55px;
+  line-height: 75px;
+  color: #726161;
+
+}
+
+
+h2 {
+  position: relative;
+  top: 0px;
+  left: 2%;
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 27px;
+  color: #726161;
+}
+
+#description {
+  font-size: 16px;
+  color: rgb(35, 34, 34);
+  width: 650px;
+  position: absolute;
+  top: 400px;
+  left: 20%;
+}
+
+p {
+  font-size: 18px;
+  color: black;
+  font-weight: 200;
+}
+
+
+/*keyframes*/
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+
+  50% {
+    background-position: 100% 50%;
+  }
+
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+@keyframes fadeInLeft {
+  0% {
+    opacity: 0;
+    transform: translate3d(100%, 0, 0);
+  }
+
+  100% {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+@keyframes fadeInRight {
+  0% {
+    opacity: 0;
+    transform: translate3d(-100%, 0, 0);
+  }
+
+  100% {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeOut {
+  0% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0;
+  }
+}
+
+
+/*nav & transitions*/
+#nav {
+  background-color: white;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 120px;
+  padding-left: 30px;
+  padding-top: 10px;
+  z-index: 20;
+  transition: transform 0.4s;
+}
+
+.nav--hidden {
+  transform: translateY(-140px);
+}
+
+#logo {
+  height: 75px;
+  width: 75px;
+  z-index: 10;
+  position: relative;
+  top: 0;
+  left: 0;
+}
+
+.button-container {
+  background-color: transparent;
+  position: absolute;
+  width: 250px;
+  height: 100px;
+  z-index: 20;
+  top: 55px;
+  right: 100px;
+}
+
+.bc--hide {
+  display: none;
+}
+
+.navb {
+  background-color: transparent;
+  color: #294240;
+  opacity: 0.8;
+  font-size: 18px;
+  height: 40px;
+  width: 120px;
+  transform: translateY(-5px);
+  z-index: 20;
+  border-color: transparent;
+  border-style: solid;
+  border-radius: 0;
+  transition: 0.4s;
+}
+
+#help-nav {
+  width: 50px;
+  font-size: 25px;
+  border: none;
+  color: #294240;
+  background-color: white;
+}
+
+.navl {
+  color: whitesmoke;
+  opacity: 0.5;
+  font-size: 18px;
+  border: none;
+  transition: 0.3s;
+}
+
+li {
+  position: relative;
+  top: 50px;
+  left: 15px;
+}
+
+
+.navb:hover,
+.menu:hover,
+#help-nav:hover,
+#chevron:hover {
+  color: #ab8dc4;
+  box-sizing: border-box;
+  transition: 0.4s;
+  cursor: pointer;
+  background-color: transparent;
+}
+
+.menu {
+  display: none;
+  position: absolute;
+  right: 100px;
+  top: 45px;
+  width: 50px;
+  background-color: transparent;
+  color: black;
+  transition: 0.4s;
+  z-index: 50;
+  border: none;
+}
+
+.menu--visible {
+  display: block;
+
+}
+
+.menu:hover {
+  color: #b54046;
+  cursor: pointer;
+}
+
+.dock {
+  position: fixed;
+  right: -350px;
+  top: 0px;
+  width: 350px;
+  height: 1000px;
+  background-color: rgb(30, 30, 30, 0.8);
+  z-index: 60;
+  transition: transform 0.4s;
+}
+
+.dock--appear {
+  transform: translateX(-350px);
+}
+
+#chevron {
+  background-color: transparent;
+  width: 20px;
+}
+
+input {
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 20px;
+  display: block;
+
+  padding-left: 10px;
+  height: 35px;
+  width: 300px;
+  border-radius: 20px;
+  border-color: transparent;
+  background-color: #bee0da;
+}
+
+table,
+th,
+td {
+  border-collapse: collapse;
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  color: #294240;
+  text-align: center;
+
+
+}
+th, td{
+  width: 400px;
+  padding: 3px;
+}
+
+#eventsTable {
+  width: 700px;
+  height: 600px;
+  float: left;
+}
+
+tr:nth-child(even) {
+  background-color: #d8f0ea;
+}
+#data{
+  display:inline-block;
+  top: 600px;
+  position: absolute;
+  width: 1200px;
+  margin:auto;
+  margin-left: 15%;
+  margin-right: 15%;
+
+}
+#attendanceDock {
+  position: absolute;
+  float: right;
+  width: 450px;
+  right: 80px;
+  visibility: hidden;
+}
+
+#attendance {
+  width: 900px;
+  height: 300px;
+}
+
+tbody {
+  overflow-y: scroll;
+  display: block;
+  height: 300px;
+  width: 500px;
+}
+thead{
+  display: block;
+  height: 30px;
+  width: 500px;
+  background-color: rgb(244, 214, 45);
+}
+
+input[type="checkbox"] {
+  cursor: pointer;
+  width: 15px;
+}
+
+button{
+  border-color: transparent;
+  border-radius: 3px;
+}

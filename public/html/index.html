@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>MGCI Student Involvement Database</title>
+  <link href="../css/index.css" rel="stylesheet" type="text/css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@700&display=swap" rel="stylesheet">
+</head>
+
+
+  
+<body>
+    <nav id="nav">
+    <br>
+    <img id="logo" src="../images/count-me-in-logo.png">
+    <div class="button-container">
+       <button class="navb" id="login-nav">Login</button>
+      <button class="navb" id="help-nav">Info</button>
+    </div>
+  </nav>
+
+  <div id = "banner">
+    <h2 id = "school-name">Marc Garneau Collegiate Institute</h2>
+    <h1>Start your activity. <br> Shape a community. <br> </h1>
+    
+  </div>
+
+
+  <div id = "login-container">
+    <h2 id = "login-label">LOGIN</h2>
+    <form id = "login-params" action = '/teacher_login', method = 'POST' > 
+      <input  type = "number" id = "idStaff" name = "idStaff" placeholder = "Employee ID"></input>
+      <input  type = "password" id = "passwordStaff" name = "passwordStaff" placeholder ="Enter password"></input>
+        <button type = "submit" id = "teacher-login">Login</button>
+    </form>
+
+ 
+  
+  <script src="../js/index.js"></script>
+
+</body>
+
+</html>

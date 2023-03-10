@@ -1,0 +1,434 @@
+body {
+  background-color: white;
+  background-size: 400% 400%;
+  height: 200vh;
+  margin: auto;
+  font-family: 'Inter', sans-serif;
+  line-height: 170%;
+  overflow-x: hidden;
+}
+
+
+h1 {
+  position: absolute;
+  width: 920px;
+  height: 60px;
+  top: 260px;
+  left: 20%;
+
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 55px;
+  line-height: 75px;
+  color: #726161;
+
+  animation-duration: 1.5s;
+  transition-timing-function: ease-in;
+  animation-fill-mode: both;
+  animation-name: fadeIn;
+
+}
+
+#formError {
+  font-family: sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 75px;
+  color: #e14949;
+  visibility: hidden;
+  position: relative;
+  left: 20px;
+  top: -20px;
+}
+
+#activities {
+  position: absolute;
+  width: 50%;
+  height: 300px;
+  top: 410px;
+  left: 20%;
+}
+
+#showAddEvents {
+  height: 38px;
+  width: 383px;
+  left: 4px;
+  top: 80px;
+  border-radius: 30px;
+  position: absolute;
+  background: #E4F7CC;
+  border-color: transparent;
+  color: #726161;
+  animation-duration: 1.7s;
+  transition-timing-function: ease-in;
+  animation-fill-mode: both;
+  animation-name: fadeIn;
+}
+
+#shadow1 {
+  position: absolute;
+  width: 383px;
+  height: 38px;
+  top: 90px;
+  left: 0px;
+  background: #DDDDDD;
+  border-radius: 30px;
+  border-color: transparent;
+  animation-duration: 1.7s;
+  transition-timing-function: ease-in;
+  animation-fill-mode: both;
+  animation-name: fadeIn;
+}
+
+#showLeaderboard {
+  position: absolute;
+  background: #CCF7E5;
+  border-radius: 30px;
+  height: 38px;
+  width: 383px;
+  left: 4px;
+  top: 160px;
+  border-color: transparent;
+  color: #726161;
+  animation-duration: 1.9s;
+  transition-timing-function: ease-in;
+  animation-fill-mode: both;
+  animation-name: fadeIn;
+
+}
+
+#shadow2 {
+  position: absolute;
+  background: #DDDDDD;
+  height: 38px;
+  width: 383px;
+  left: 0px;
+  top: 170px;
+  border-radius: 30px;
+  border-color: transparent;
+  animation-duration: 1.9s;
+  transition-timing-function: ease-in;
+  animation-fill-mode: both;
+  animation-name: fadeIn;
+
+}
+
+#flag-1 {
+  position: absolute;
+  width: 31px;
+  height: 36px;
+  top: 67px;
+  left: 30px;
+  animation-duration: 1.5s;
+  transition-timing-function: ease-in;
+  animation-fill-mode: both;
+  animation-name: fadeIn;
+}
+
+#flag-2 {
+  position: absolute;
+  width: 31px;
+  height: 36px;
+  top: 147px;
+  left: 30px;
+  animation-duration: 1.5s;
+  transition-timing-function: ease-in;
+  animation-fill-mode: both;
+  animation-name: fadeIn;
+}
+
+
+#addEventHeading {
+  position: relative;
+  top: 0px;
+  left: 2%;
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 27px;
+  color: #726161;
+}
+
+#leaderboardHeading {
+  position: absolute;
+  top: 1300px;
+  left: 5%;
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 27px;
+  color: #726161;
+}
+
+#submitEvent {
+  margin-left: 0;
+  height: 40px;
+  width: 200px;
+  border-radius: 20px;
+  border-color: transparent;
+  background-color: #d5d5d5;
+
+}
+
+
+
+/*nav*/
+#nav {
+  background-color: white;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 120px;
+  padding-left: 30px;
+  padding-top: 10px;
+  z-index: 20;
+  transition: transform 0.4s;
+}
+
+#logo {
+  height: 75px;
+  width: 75px;
+  z-index: 10;
+  position: relative;
+  top: 0;
+  left: 0;
+}
+
+.button-container {
+  background-color: transparent;
+  position: absolute;
+  width: 250px;
+  height: 100px;
+  z-index: 20;
+  top: 55px;
+  right: 100px;
+}
+
+
+.navb {
+  background-color: transparent;
+  color: #294240;
+  opacity: 0.8;
+  font-size: 18px;
+  height: 40px;
+  width: 120px;
+  transform: translateY(-5px);
+  z-index: 20;
+  border-color: transparent;
+  border-style: solid;
+  border-radius: 0;
+  transition: 0.4s;
+}
+
+#help-nav {
+  width: 50px;
+  font-size: 25px;
+  border: none;
+  color: #294240;
+  background-color: white;
+}
+
+.navb:hover,
+#help-nav:hover {
+  color: #ab8dc4;
+  box-sizing: border-box;
+  transition: 0.4s;
+  cursor: pointer;
+  background-color: transparent;
+}
+
+/*interactive elements*/
+
+input {
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 20px;
+  display: block;
+  padding-left: 20px;
+  padding-right: 20px;
+  height: 35px;
+  width: 300px;
+  border-radius: 20px;
+  border-color: transparent;
+  background-color: #bee0da;
+}
+
+table,
+th,
+td {
+  border-collapse: collapse;
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  color: #294240;
+
+}
+
+#eventsTable {
+  position: absolute;
+  top: 800px;
+  left: 5%;
+}
+
+
+#addEventForm {
+  position: absolute;
+  height: 700px;
+  top: 800px;
+  left: 60%;
+
+}
+
+#leaderboard {
+  position: absolute;
+  top: 1400px;
+  left: 5%;
+
+}
+
+#quarterlyReport {
+  position: absolute;
+  height: 700px;
+  top: 1400px;
+  right: 120px;
+
+}
+
+#generateReport {
+  position: absolute;
+  height: 40px;
+  width: 200px;
+  top: 1320px;
+  right: 550px;
+  border-radius: 30px;
+  background-color: #E4F7CC;
+  border-color: transparent;
+  color: #3e3838;
+
+}
+#resetAll{
+  position: absolute;
+  height: 25px;
+  width: 120px;
+  top: 1330px;
+  left: 450px;
+  border-radius: 30px;
+  background-color: #e87d7d;
+  border-color: transparent;
+  color: #161515;
+  font-size: 10px;
+}
+
+button:hover, #submitEvent:hover {
+  background-color: #edd6ff;
+  cursor: pointer;
+  transition: 0.4s;
+}
+
+
+tr:nth-child(even) {
+  background-color: #D6EEEE;
+}
+
+tbody {
+  overflow-y: scroll;
+  display: block;
+  height: 300px;
+}
+
+thead {
+  display: block;
+  height: 30px;
+  background-color: rgb(244, 214, 45);
+}
+
+table,
+th,
+td {
+  border-collapse: collapse;
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  color: #294240;
+  text-align: center;
+}
+
+th,
+td {
+  width: 100px;
+  padding: 3px;
+}
+
+button{
+  border-color: transparent;
+  border-radius: 3px;
+}
+
+
+/*keyframe animations*/
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+
+  50% {
+    background-position: 100% 50%;
+  }
+
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+@keyframes fadeInLeft {
+  0% {
+    opacity: 0;
+    transform: translate3d(100%, 0, 0);
+  }
+
+  100% {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+@keyframes fadeInRight {
+  0% {
+    opacity: 0;
+    transform: translate3d(-100%, 0, 0);
+  }
+
+  100% {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeOut {
+  0% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0;
+  }
+}
+
+/*title block*/

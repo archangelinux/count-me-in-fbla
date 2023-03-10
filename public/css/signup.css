@@ -1,0 +1,72 @@
+html, body {
+  height: 100%;
+  width: 100%;
+  display: block;
+ }
+ h2{
+ position: absolute;
+ top: 300px;
+ left: 35%;
+ font-family: 'Open Sans';
+ font-style: normal;
+ font-weight: 500;
+ font-size: 30px;
+ line-height: 75px;
+ color: #726161;
+ }
+ 
+ button{
+  height: 50px;
+  width: 200px;
+  border-radius: 20px;
+  border-color: transparent;
+   margin: 10px;
+ }
+ button:hover, submit:hover{
+  background-color: #edd6ff;
+  cursor: pointer;
+  transition: 0.4s;
+ }
+ submit{
+     background-color: #efefef;
+   height: 50px;
+   width: 200px;
+ 
+ }
+ 
+ #button-container{
+  display: inline-flex;
+  position: relative;
+  left: 35%;
+  top: 400px;
+  
+ }
+ 
+ #new-student-params{
+ visibility: hidden;
+   position: absolute;
+   left: 35%;
+   top: 500px;
+ }
+
+ #new-teacher-params{
+  visibility: hidden;
+    position: absolute;
+    left: 45%;
+    top: 500px;
+  }
+
+ input{
+  margin-left: auto;
+  margin-right: auto;
+   margin-bottom: 10px;
+   display: block;
+ 
+  padding-left: 10px;
+  height: 35px;
+  width: 300px;
+  border-radius: 20px;
+  border-color: transparent;
+  background-color: #edd6ff;
+ }
+ 

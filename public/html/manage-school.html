@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>MGCI Student Involvement</title>
+  <link href="../css/manage-school.css" rel="stylesheet" type="text/css" />
+  <script src="https://kit.fontawesome.com/bd80ac2f79.js" crossorigin="anonymous"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <nav id="nav">
+    <br>
+    <img id="logo" src="../images/count-me-in-logo.png">
+    <div class="button-container">
+      <button class="navb" id="home-nav">Homepage</button>
+      <button class="navb" id="help-nav"><i class="fa-solid fa-circle-info"></i></button>
+    </div>
+  </nav>
+
+  <h1 id="greeting">Marc Garneau CI<br>Student Involvement Manager </h1>
+  <div id="activities">
+    <div id="shadow1"></div>
+    <button id="showAddEvents"><em>Manage Events</em></button>
+    <div id="shadow2"></div>
+    <button id="showLeaderboard"><em>View Leaderboard</em></button>
+    <img id="flag-1" src="../images/flag-icon.png">
+    <img id="flag-2" src="../images/flag-icon.png">
+  </div>
+
+
+
+  <form id="addEventForm" onsubmit = "event.preventDefault();">
+    <h2 id = "addEventHeading">Add Event</h2>
+    <input type="text" id = "eventTitle" placeholder="Title">
+    <input list="eventType" id = "eventTypeDropdown" placeholder = "Category">
+    <datalist id="eventType">
+      <option value="Sports">
+      <option value="Clubs">
+      <option value="Spirit">
+      <option value="Special">
+    </datalist></input>
+    <input type="datetime-local" id = "eventTime">
+    <input type="submit" id="submitEvent">
+    <p id = "formError">Please fill out all fields.</p>
+  </form>
+
+  <h2 id = "leaderboardHeading">Leaderboard</h2>
+   <table id="leaderboard">
+    <thead>
+      <th style = "width: 20px;">#</th>
+      <th>First Name</th>
+      <th>Last Name</th>
+      <th>Student #</th>
+      <th>Grade</th>
+      <th>Points</th>
+    </thead>
+    <tbody id="leaderboardBody"></tbody>
+  </table>
+
+  <button id = "generateReport">Generate Report</button>
+  <button id = "resetAll">RESET ALL POINTS</button>
+
+
+
+  <table id="quarterlyReport">
+    <thead>
+      <th style = "width: 150px;">Category</th>
+      <th style = "width: 150px;">Winner Name</th>
+      <th>Student #</th>
+      <th>Points</th>
+      <th>Prize</th>
+    </thead>
+    <tbody id="reportBody"></tbody>
+  </table>
+
+  <table id="eventsTable">
+    <thead>
+      <th style = "width: 150px;">Event Name</th>
+      <th>Category</th>
+      <th style = "width: 150px;">Date/Time</th>
+      <th>Modify</th>
+    </thead>
+    <tbody id="eventBody"></tbody>
+  </table>
+
+
+  <script src="../js/manage-school.js">
+
+  </script>
+
+</body>
+
+</html>

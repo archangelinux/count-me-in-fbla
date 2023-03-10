@@ -1,0 +1,121 @@
+body{
+    background-color: white;
+    background-size: 400% 400%;  
+    height: 150vh;  
+    font-family: 'Inter', sans-serif;
+    line-height: 170%;
+    overflow-x:hidden ;
+  }
+  
+
+  /*title block*/
+  
+  
+  p{
+    position: absolute;
+    top: 300px;
+    left: 200px;
+    font-family: sans-serif;
+  font-style: normal;
+  font-weight: 2px;
+  font-size: 20px;
+  line-height: 35px;
+  color: #b8ded1;
+  width: 90%;
+  
+  }
+  
+  #content{
+    position: absolute;
+    background-color: #294240;
+    width: 90%;
+    height: 1700px;
+    top:0;
+    left: 0;
+    padding: 100px;
+  }
+  
+
+  
+  /*interactive elements*/
+  
+  button{
+    margin: auto;
+    height: 50px;
+    width: 200px;
+    border-radius: 20px;
+    border-color: transparent;
+  }
+  button:hover{
+    background-color: #edd6ff;
+    cursor: pointer;
+    transition: 0.4s;
+  }
+  
+  
+  /*navbar*/
+  #nav{
+    background-color: white;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100px;
+    padding-left: 30px;
+    padding-top: 10px;
+    z-index: 20;
+    transition: transform 0.4s;
+  }
+  
+  #logo{
+    height: 70px;
+    width: 70px;
+    z-index: 10;
+    position: relative;
+    top: -10px;
+    left: 0;
+  }
+  #help-nav{
+    color: #ab8dc4;
+
+  }
+  .button-container{
+    background-color: transparent;
+    position: absolute;
+    width: 250px;
+    height: 100px;
+    z-index: 20;
+    top: 50px;
+    right: 100px;
+  }
+  
+  .navb{
+    background-color: transparent;
+    color: #294240;
+    opacity: 0.8;
+    font-size: 16px;
+    height: 35px;
+    width: 100px;
+    transform: translateY(-5px);
+    z-index: 20;
+    border-color: transparent;
+    border-style: solid;
+    border-radius:0;
+    transition: 0.4s;
+  }
+  
+  .navb:hover{
+    color: #ab8dc4;
+    box-sizing: border-box;
+    transition: 0.4s;
+    cursor: pointer;
+    background-color: transparent;
+  }
+  
+  
+  
+  
+  
+  
+  
+  
